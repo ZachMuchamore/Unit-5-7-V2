@@ -237,6 +237,8 @@ MonoBehaviour:
   OptionsMenu: OptionsMenu
   AudioMenu: AudioMenu
   StartMenu: StartMenu
+  ControlsMenu: ControlsMenu
+  AccessibilityMenu: AccessibilityMenu
 --- !u!4 &274348865
 Transform:
   m_ObjectHideFlags: 0

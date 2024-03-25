@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public float MasterVol;
+    public float SFXVol;
+    public float MusicVol;
+    public bool Music; 
+
+
     public static LevelManager instance;
 
     void Awake()
