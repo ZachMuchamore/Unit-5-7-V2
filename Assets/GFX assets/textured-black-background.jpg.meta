@@ -188,7 +188,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      textured-black-background_0: 2926165096735564029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

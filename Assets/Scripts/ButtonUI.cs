@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+
 
 public class ButtonUI : MonoBehaviour
 {
@@ -11,7 +13,10 @@ public class ButtonUI : MonoBehaviour
     [SerializeField] private string StartMenu = "StartMenu";
     [SerializeField] private string ControlsMenu = "ControlsMenu";
     [SerializeField] private string AccessibilityMenu = "AccessibilityMenu";
-   public void PlayButton()
+
+    public AudioSource ClickEffect;
+
+    public void PlayButton()
     {
         SceneManager.LoadScene(Level1);
     } 
@@ -40,5 +45,10 @@ public class ButtonUI : MonoBehaviour
     {
         SceneManager.LoadScene(AccessibilityMenu);
     }
-    
+    public void ClickSound()
+    {
+        ClickEffect.Play();
+
+    }
+
 }
