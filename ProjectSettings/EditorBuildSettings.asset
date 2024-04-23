@@ -23,5 +23,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AccessibilityMenu.unity
     guid: c6bfe1f5ddc1aa34d8380c2d5f8f94b8
+  - enabled: 1
+    path: Assets/Scenes/Empty.unity
+    guid: 69709d09a9f4c1a48a4e8c6e9857fb24
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour
 
     public const string MUSIC_KEY = "MusicVolume";
     public const string SFX_KEY = "SFXVolume";
+    public const string MASTER_KEY = "MasterVolume";
 
 
     void Awake()
@@ -36,7 +37,9 @@ public class LevelManager : MonoBehaviour
     {
         float MusicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1.0f);
         float SFXVolume = PlayerPrefs.GetFloat(SFX_KEY, 1.0f);
+        float MasterVolume = PlayerPrefs.GetFloat(MASTER_KEY, 1.0f);
 
+        audioMixer.SetFloat(AudioManager.MASTER_MUSIC, Mathf.Log10(MasterVolume) * 20);
         audioMixer.SetFloat(AudioManager.MIXER_MUSIC, Mathf.Log10(MusicVolume) * 20);
         audioMixer.SetFloat(AudioManager.MIXER_SFX, Mathf.Log10(SFXVolume) * 20);
 

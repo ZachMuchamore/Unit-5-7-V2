@@ -48,7 +48,16 @@ public class ButtonUI : MonoBehaviour
     public void ClickSound()
     {
         ClickEffect.Play();
+    }
 
+    public void QuitGame()
+    {
+        SceneManager.LoadScene(StartMenu);
+    }
+
+    public void QuitToWindows()
+    {
+        Application.Quit();
     }
 
 }
